@@ -1,0 +1,40 @@
+﻿@model IEnumerable<DomingoRoofWorks.Models.EmployeeModel>
+
+    <p>
+        @Html.ActionLink("Add new Employee details", "AddEmployee")
+        @Html.ActionLink("View Job cards", "GetAllJobCards")
+        @Html.ActionLink("View Invoices", "GetAllInvoices")
+    </p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobCardId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpNames)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmpId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobCardId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmpNames)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditEmployee", new {id = item.EmpId }) |
+            @Html.ActionLink("Delete", "DeleteEmployee", new { id = item.EmpId }, new { onclick = "ReturnConfirm(Are you sure you want delete?;"  } )
+        </td>
+    </tr>
+}
+
+</table>

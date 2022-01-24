@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="getconn-Web.config Connection String" description="getconn Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:domingoroofworks.database.windows.net,1433;Initial Catalog=JMD_Roofworks;Persist Security Info=False;User ID=jordanmolefe;Password=Esamolefe44?;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\User\\Desktop\\Jordan_Molefe_19330106_CLDV6211_POE\\Jordan_Molefe_19330106_CLDV6211_POE\\POE\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='getconn']/@connectionString" />
+  </parameter>
+</parameters>
